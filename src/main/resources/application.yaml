@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: servicea
+  config:
+    import: "optional:configserver:"
+  could:
+    config:
+      uri: http://localhost:8888/
+      name: service-a
+      enable: false
+    profiles:
+     active: dev 
+
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Limchaeyoon425/config-repo.git
