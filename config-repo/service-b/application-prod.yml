@@ -1,2 +1,6 @@
 service:
  name: test service for Production B
+
+ personal:
+  studentId: "202135140"  
+  name: "임채윤"        
