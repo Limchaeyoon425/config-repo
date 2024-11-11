@@ -5,8 +5,8 @@ spring:
     import: "optional:configserver:"
   cloud:
     config: 
-      uri: http://localhost:8888/
-      name: service-a
-      enable: false
+      uri: http://localhost:8081/
+      name: service-b
+      enable: true
   profiles:
-    active: dev
+    active:prod
